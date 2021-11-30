@@ -28,7 +28,7 @@ try{
 	}
     //display all pairs
 	for (int i=0; i<input.size(); ++i){
-        cout << '(' << input[i].name << ', ' << input[i].score << ")\n";
+        cout << '(' << input[i].name << ',' << input[i].score << ")\n";
     }
     //key to exit
 	keep_window_open("~");
