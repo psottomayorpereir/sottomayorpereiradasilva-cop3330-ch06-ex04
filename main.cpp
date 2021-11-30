@@ -14,8 +14,10 @@ try{
 	vector<Name_value> input;
     int val;
 	string stri;
+    //ask for user input
+    cout << "Enter a name and a value. Enter 'Exit 0' to exit:";
     //read user input, a string and an integer
-    //exit if 'Exit' is entered
+    //exit if 'Exit 0' is entered
 	while (cin>>stri>>val && stri!="Exit") {
 		for (int i=0; i<input.size(); ++i){
             //checking if there is a duplicate
