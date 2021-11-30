@@ -15,7 +15,8 @@ try{
     int val;
 	string stri;
     //read user input, a string and an integer
-	while (cin>>stri>>val && stri!="NoName") {
+    //exit if 'Exit' is entered
+	while (cin>>stri>>val && stri!="Exit") {
 		for (int i=0; i<input.size(); ++i){
             //checking if there is a duplicate
             if (stri==input[i].name){
