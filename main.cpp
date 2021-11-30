@@ -15,10 +15,10 @@ try{
     int val;
 	string stri;
     //ask for user input
-    cout << "Enter a name and a value. Enter 'Exit 0' to exit:";
+    cout << "Enter a name and a value. Enter 'NoName 0' to exit:";
     //read user input, a string and an integer
-    //exit if 'Exit 0' is entered
-	while (cin>>stri>>val && stri!="Exit") {
+    //exit if 'NoName 0' is entered
+	while (cin>>stri>>val && stri!="NoName") {
 		for (int i=0; i<input.size(); ++i){
             //checking if there is a duplicate
             if (stri==input[i].name){
@@ -30,8 +30,9 @@ try{
 		input.push_back(Name_value(stri,val));
 	}
     //display all pairs
+    cout << "All pairs entered:\n";
 	for (int i=0; i<input.size(); ++i){
-        cout << '(' << input[i].name << ',' << input[i].score << ")\n";
+        cout << input[i].name << ',' << input[i].score << "\n";
     }
     //key to exit
 	keep_window_open("~");
